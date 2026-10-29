@@ -1,26 +1,21 @@
 def maiorMenor(n1, n2, n3):
-    maior, menor = 0, 0
     
     if(n1 > n2 and n1 > n3):
-        maior = n1
         if(n2 < n3):
-            menor = n3
+            print(n1, n2)
         else:
-            menor = n2
+            print(n1, n3)
     elif(n2 > n3):
-        maior = n2
         if(n1 < n3):
-            menor = n1
+            print(n2, n1)
         else:
-            menor = n3
+            print(n2, n3)
     else:
-        maior = n3
         if(n1 < n2):
-            menor = n1
+            print(n3, n1)
         else:
-            menor = n2
+            print(n3, n2)
     
-    print(f"O maior número é {maior}, o menor é {menor}")
 
 num1 = eval(input("Insira o primeiro número: "))
 num2 = eval(input("Insira o segundo número: "))
