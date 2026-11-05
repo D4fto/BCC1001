@@ -4,7 +4,7 @@ def fatiarTempo(totalSegundos):
   minutos = resto // 60
   resto %= 60
   segundos = resto
-
+  
   print(f"{horas}H {minutos}min {segundos}s")
 
 
